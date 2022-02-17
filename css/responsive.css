@@ -3,6 +3,10 @@
     width: 85%;
   }
 
+  .section-title-container {
+    margin-bottom: 4rem;
+  }
+
   .hamburger-menu {
     display: none;
   }
@@ -70,7 +74,9 @@
   }
 
   .toolbox-outline {
+    height: 100%;
     display: block;
+    margin-bottom: 2rem;
   }
 
   .skills-category h4 {
