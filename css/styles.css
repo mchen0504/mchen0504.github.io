@@ -1,0 +1,304 @@
+/* general styles */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 4.5rem 0 0 0;
+  background-color: #f4eae6;
+}
+
+main {
+  width: 90%;
+  margin: 2rem auto;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  padding: 0.8rem;
+  background-color: #e57f84;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  border-radius: 3px;
+  transition: transform 250ms;
+}
+
+.btn:hover {
+  background-color: #33b9ef;
+  transform: translateX(5px);
+}
+
+#about,
+#skills,
+#projects {
+  padding: 1rem 0;
+}
+
+.section-title-container {
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 5rem 0;
+}
+
+.section-title-icon {
+  width: 1.5rem;
+}
+
+#about a {
+  border-bottom: 3px solid #33b9ef;
+}
+
+/* for section arrows */
+@keyframes arrowblink {
+  0% {
+    opacity: 0.2;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.2;
+  }
+}
+
+/* down-pointing arrows between sections */
+.section-arrows {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1rem;
+}
+
+.section-arrows span {
+  color: purple;
+  font-weight: 900;
+  font-size: 1rem;
+  animation-duration: 2s;
+  animation-name: arrowblink;
+  animation-iteration-count: infinite;
+}
+
+.section-arrows span:nth-child(1) {
+  animation-delay: 0.5s;
+}
+
+.section-arrows span:nth-child(2) {
+  animation-delay: 0.8s;
+}
+
+/* navigation bar */
+nav {
+  background-color: #4297a0;
+  height: 4.5rem;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  z-index: 10;
+}
+
+.logo a {
+  font-family: "Righteous", cursive;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.hamburger-menu {
+  font-size: 2rem;
+  color: white;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.nav-menu {
+  margin: 0 0 0 -5%;
+  background-color: #4297a0;
+  width: 100%;
+  position: fixed;
+  top: 4.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 0;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.menu-open {
+  opacity: 1;
+  height: 40%;
+}
+
+.nav-menu a {
+  font-family: "Montserrat", sans-serif;
+  display: inline-block;
+  margin: 1.5rem 0;
+  font-size: 1.2rem;
+  color: white;
+  border-bottom: 5px solid transparent;
+}
+
+.nav-menu a:hover {
+  border-bottom: 5px solid #33b9ef;
+}
+
+/* About section */
+.icons-container {
+  margin: 4rem 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10%;
+}
+
+.icons-container img {
+  width: 20%;
+  filter: opacity(0.5) drop-shadow(0 0 0 #ffbc42) saturate(1000%);
+}
+
+/* skills */
+.toolbox-outline {
+  display: none;
+}
+
+#skills .column {
+  margin: 3rem 0;
+  gap: 2rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin: 1rem 0;
+  width: fit-content;
+  border-bottom: 3px solid #ffbc42;
+}
+
+.skills-category .row {
+  flex-wrap: wrap;
+  gap: 2.1rem;
+}
+
+.skills-category span {
+  font-size: 1.3rem;
+}
+
+#projects .column {
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+.project-tools {
+  font-style: italic;
+  color: #757575;
+  font-size: 1.1rem;
+}
+
+.project-buttons {
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+footer {
+  background-color: #4297a0;
+  color: white;
+  height: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content {
+  width: 90%;
+  padding: 0 auto;
+}
+
+.contact {
+  gap: 0.8rem;
+  align-items: center;
+}
+
+footer span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+}
+
+.social-icons {
+  gap: 1.3rem;
+  font-size: 1.3rem;
+}
+
+footer hr {
+  margin: 0.8rem 0;
+}
