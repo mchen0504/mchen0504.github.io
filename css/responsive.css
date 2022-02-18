@@ -33,6 +33,10 @@
   }
 
   /* projects section */
+  .projects-container {
+    gap: 1rem;
+  }
+
   #projects .column {
     flex-direction: row;
     gap: 2.5rem;

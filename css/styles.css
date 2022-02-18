@@ -246,16 +246,17 @@ h4 {
 }
 
 /* projects section */
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 #projects .column {
   align-items: flex-start;
   gap: 2rem;
   margin-bottom: 3rem;
 }
-
-/* .img-container {
-  margin: 0;
-  height: auto;
-} */
 
 .project-tools {
   font-style: italic;
