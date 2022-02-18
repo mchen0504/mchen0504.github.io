@@ -3,7 +3,11 @@
     width: 85%;
   }
 
-  .section-title-container {
+  img {
+    height: 100%;
+  }
+
+  .section-title {
     margin-bottom: 4rem;
   }
 
@@ -59,7 +63,7 @@
 
   #skills .column {
     position: absolute;
-    top: 60%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
     flex-direction: row;
@@ -74,7 +78,6 @@
   }
 
   .toolbox-outline {
-    height: 100%;
     display: block;
     margin-bottom: 2rem;
   }

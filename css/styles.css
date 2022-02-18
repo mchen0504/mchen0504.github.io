@@ -1,5 +1,4 @@
 /* general styles */
-
 html {
   scroll-behavior: smooth;
 }
@@ -31,7 +30,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 
 h3 {
@@ -54,7 +53,6 @@ a {
 }
 
 img {
-  /* height: 100%; */
   width: 100%;
   object-fit: contain;
 }
@@ -91,15 +89,9 @@ img {
   padding: 1rem 0;
 }
 
-.section-title-container {
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
+.section-title {
+  text-align: center;
   margin: 5rem 0 2rem 0;
-}
-
-.section-title-icon {
-  width: 1.5rem;
 }
 
 #about a {
@@ -123,7 +115,7 @@ img {
 
 /* down-pointing arrows between sections */
 .section-arrows {
-  margin: 2rem 0;
+  margin: 2rem 0 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -132,7 +124,7 @@ img {
 
 .section-arrows span {
   margin: 0;
-  color: purple;
+  color: #2f5061;
   font-size: 1.8rem;
   animation-duration: 2s;
   animation-name: arrowblink;
@@ -184,18 +176,17 @@ nav {
   background-color: #4297a0;
   width: 100%;
   position: fixed;
-  top: 4.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  top: 4.5rem;
   height: 0;
-  opacity: 0;
-  transition: all 0.4s ease;
+  overflow: hidden;
+  transition: height 0.3s ease;
 }
 
 .menu-open {
-  opacity: 1;
   height: 40%;
 }
 
@@ -234,14 +225,13 @@ nav {
 }
 
 #skills .column {
-  margin: 3rem 0;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 h4 {
   font-size: 1.2rem;
   font-style: italic;
-  margin: 1rem 0;
+  margin: 0 0 1rem 0;
   width: fit-content;
   border-bottom: 3px solid #ffbc42;
 }
@@ -258,7 +248,7 @@ h4 {
 /* projects section */
 #projects .column {
   align-items: flex-start;
-  gap: 1rem;
+  gap: 2rem;
   margin-bottom: 3rem;
 }
 
