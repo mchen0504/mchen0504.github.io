@@ -59,14 +59,15 @@
 
   /* skills section */
   #skills {
-    position: relative;
+    /* position: relative; */
+    padding: 0 8%;
   }
 
   #skills .column {
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /* position: absolute; */
+    /* top: 65%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
